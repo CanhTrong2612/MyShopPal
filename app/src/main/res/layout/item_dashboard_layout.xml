@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/item_dashboard_background"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="2dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_dashboard_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:minHeight="10dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_user_placeholder" />
+
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:background="#f3f3f3"
+        android:id="@+id/ll_dashboard_item_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_dashboard_item_image"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textSize="14dp"
+            android:id="@+id/tv_dashboard_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="Item Name" />
+        <TextView
+            android:id="@+id/tv_dashboard_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="2dp"
+            android:textStyle="bold"
+            tools:text="$100.00" />
+    </LinearLayout>
+
+</RelativeLayout>

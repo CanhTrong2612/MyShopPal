@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/item_address_marginTop"
+    android:paddingStart="@dimen/item_address_paddingStartEnd"
+    android:paddingTop="@dimen/item_address_paddingTopBottom"
+    android:paddingEnd="@dimen/item_address_paddingStartEnd"
+    android:background="@drawable/item_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_address_full_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/item_value_text_color"
+            android:textSize="18dp"
+            android:text="Denis Panjuta" />
+
+        <TextView
+            android:id="@+id/tv_address_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_gradient_color_background"
+            android:paddingStart="@dimen/item_address_type_paddingStartEnd"
+            android:paddingTop="@dimen/item_address_type_paddingTopBottom"
+            android:paddingEnd="@dimen/item_address_type_paddingStartEnd"
+            android:paddingBottom="@dimen/item_address_type_paddingTopBottom"
+            android:textColor="@color/white"
+            android:textSize="@dimen/address_details_textSize"
+            android:textStyle="bold"
+            android:text="Home" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/address_details_marginTop"
+        android:textColor="@color/item_value_text_color"
+        android:textSize="@dimen/address_details_textSize"
+        android:text="XYZ" />
+
+    <TextView
+        android:id="@+id/tv_address_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/address_details_marginTop"
+        android:textColor="@color/item_value_text_color"
+        android:textSize="@dimen/address_details_textSize"
+        android:text="+84 123456789" />
+
+</LinearLayout>
