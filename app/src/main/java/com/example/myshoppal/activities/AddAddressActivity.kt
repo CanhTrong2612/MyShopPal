@@ -16,6 +16,7 @@ import com.example.myshoppal.utils.Constants
 class AddAddressActivity :BaseActivity() {
     private var binding : ActivityAddAddressBinding? = null
     private var mAddress:Address ? =null
+    private lateinit var address: Address
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityAddAddressBinding.inflate(layoutInflater)

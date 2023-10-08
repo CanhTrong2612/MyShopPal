@@ -54,4 +54,5 @@ class MyProductAdapter(
         val tvPrice :TextView = view.findViewById(R.id.tv_item_price)
         val ivDelete :ImageView = view.findViewById(R.id.iv_delete_product)
     }
+
 }
